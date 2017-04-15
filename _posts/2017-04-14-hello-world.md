@@ -1,14 +1,10 @@
 ---
 layout: default
-title: My Blog
+title: 你好， Jekyll 
 ---
 
 <h2>{{ page.title }}</h2>
 
-<p>New Articles</p>
+<p>Hello Jekyll</p>
 
-<ul>
-  {% for post in site.posts %}
-    <li>{{ post.data | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
+<p>{{ page.date | date_to_string }}</p>
